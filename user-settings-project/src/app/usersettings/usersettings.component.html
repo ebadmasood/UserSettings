@@ -1,0 +1,16 @@
+<div class="container">
+<h3>User Settings</h3>
+<form #form="ngForm">
+<div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name.." [(ngModel)]="userSettings.name"/>
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com" [(ngModel)]="userSettings.email">
+  </div>
+  <div class="mb-3">
+    <button type="button" class="btn btn-primary">Save</button>
+  </div>
+</form>
+</div>
